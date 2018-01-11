@@ -1,0 +1,66 @@
+{
+  "admin": [
+      {
+      "id": "admin",
+      "email": "lucasc93@hotmail.com",
+      "password": "12345678"
+      }
+    ],
+  "users": [
+      {
+      "id": 1,
+      "email": "fulano@hotmail.com",
+      "password": "fulano123"
+     },
+      {
+      "id": 2,
+      "email": "ciclano@hotmail.com",
+      "password": "123ciclano"
+      }
+    ],
+
+  "forms": [
+      {
+      "id": "forms1",
+      "acidente-resp-sim": "Positivo",
+      "bebidas-resp-sim-qual": "Positivo",
+      "bebidas-resp-sim-tempo": "Positivo",
+      "cor": "Positivo",
+      "data-nascimento": "Positivo",
+      "diagnostico-clinico": "Positivo",
+      "drogas-resp-sim-qual": "Positivo",
+      "drogas-resp-sim-tempo": "Positivo",
+      "ex-fumante-resp-sim-tempo": "Positivo",
+      "fator-etiologico": "Positivo",
+      "forma": "Positivo",
+      "fumante-resp-sim-quant": "Positivo",
+      "fumante-resp-sim-tempo": "Positivo",
+      "ganglios-resp-sim": "Positivo",
+      "histopatologico": "Positivo",
+      "insercao": "Positivo",
+      "localizacao": "Positivo",
+      "medicamento-resp-sim": "Positivo",
+      "naturalidade": "Positivo",
+      "nome": "Positivo",
+      "profissao": "Positivo",
+      "tamanho": "Positivo",
+      "titulo": "Positivo",
+      "tratamento-medico-resp-sim": "Positivo"
+      }
+  ],
+
+  "diagnosticos": [
+    {
+    "titulo": "Ferida na boca frontal!"
+    },
+    {
+    "titulo": "Lesão lado direito."
+    },
+    {
+    "titulo": "Mucosa interna."
+    },
+    {
+    "titulo": "Inflamação avermelhada."
+    }
+  ]
+}

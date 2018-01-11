@@ -1,0 +1,331 @@
+<!-- novo diagnóstico -->
+<div class="col-sm-9 col-md-9">
+    <form class="list-group-item" routerLink="/replyDiagnostic">
+        <h3>{{diagnosticAdmin.titulo}}</h3>
+
+        <br>
+
+        <!-- informações do paciente -->
+        <div class="form-group list-group-item">
+            <h4>Informações do Paciente</h4>
+
+            <br>
+
+            <div class="row">
+                <!-- nome -->
+                <div class="col-sm-12 col-md-6">
+                    <label for="nome">Nome</label>
+                    <p>Nome</p>
+                </div>
+                <!-- nome -->
+
+                <!-- naturalidade -->
+                <div class="col-sm-12 col-md-6">
+                    <label for="naturalidade">Naturalidade</label>
+                    <p>Naturalidade</p>
+                </div>
+                <!-- naturalidade -->
+            </div>
+
+            <br>
+
+            <!-- sexo -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <label for="sexo">Sexo</label>
+                    <p>Sexo</p>
+                </div>
+            </div>
+            <!-- sexo -->
+
+            <br>
+
+            <div class="row">
+                <!-- data de nascimento -->
+                <div class="col-sm-12 col-md-6">
+                    <label for="data-nascimento">Data de nascimento</label>
+                    <p>dd/mm/aaaa</p>
+                </div>
+                <!-- data de nascimento -->
+
+                <!-- profissão -->
+                <div class="col-sm-12 col-md-6">
+                    <label for="profissao">Profissão</label>
+                    <p>Profissão</p>
+                </div>
+                <!-- profissão -->
+            </div>
+
+
+            <br>
+
+
+            <!-- escolaridade -->
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <label for="escolaridade">Escolaridade</label>
+                    <p>Escolaridade</p>
+                </div>
+                <!-- escolaridade -->
+
+                <!-- estado civil -->
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <label for="estado-civil">Estado civil</label>
+                    <p>Estado civil</p>
+                </div>
+                <!-- estado civil -->
+            </div>
+        </div>
+        <!-- informações do paciente -->
+
+        <br>
+
+        <!-- histórico médico -->
+        <div class="form-group list-group-item">
+            <h4>Histórico Médico</h4>
+
+            <br>
+
+            <div class="row">
+                <!-- tratamento médico -->
+                <div class="col-md-6">
+                    <label for="tratamento-medico">Você está em tratamento médico?</label>
+                    <p>Não</p>
+                </div>
+                <!-- tratamento médico -->
+
+                <!-- acidente -->
+                <div class="col-md-6">
+                    <label for="acidente">Você já sofreu algum acidente?</label>
+                    <p>Sim</p>
+                    <label for="acidente-resp-sim">Qual?</label>
+                    <p>Acidente...</p>
+                </div>
+                <!-- acidente -->
+            </div>
+
+            <br>
+
+            <!-- problemas de saúde -->
+            <label>Você tem ou teve algum dos problemas de saúde abaixo?</label>
+
+            <div class="row">
+                <!-- pressao alta -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="pressao-alta">Pressão alta</label>
+                    <p>Não</p>
+                </div>
+                <!-- pressao alta -->
+
+                <!-- anemia -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="anemia">Anemia</label>
+                    <p>Não</p>
+                </div>
+                <!-- anemia -->
+
+                <!-- diabetes -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="diabetes">Diabetes</label>
+                    <p>Não</p>
+                </div>
+                <!-- diabetes -->
+
+                <!-- hepatite -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="hepatite">Hepatite</label>
+                    <p>Não</p>
+                </div>
+                <!-- hepatite -->
+
+                <!-- dst -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="dst">DST</label>
+                    <p>Não</p>
+                </div>
+                <!-- dst -->
+
+                <!-- aids -->
+                <div class="col-sm-4 col-md-2">
+                    <label for="aids">AIDS</label>
+                    <p>Não</p>
+                </div>
+                <!-- aids -->
+            </div>
+            <!-- problemas de saúde -->
+
+            <br>
+
+            <div class="row">
+                <!-- medicamento -->
+                <div class="col-md-6">
+                    <label for="medicamento">Você toma algum medicamento?&nbsp;</label>
+                    <p>Sim</p>
+                    <label for="medicamento-resp-sim">Qual?</label>
+                    <p>Medicamento...</p>
+                </div>
+                <!-- medicamento -->
+
+                <!-- ex-fumante -->
+                <div class="col-md-6">
+                    <label for="ex-fumante">Você é ex-fumante?</label>
+                    <p>Não</p>
+                </div>
+                <!-- ex-fumante -->
+            </div>
+
+            <br>
+
+            <div class="row">
+                <!-- fumante -->
+                <div class="col-md-4">
+                    <label for="fumante">Você fuma?</label>
+                    <p>Não</p>
+                </div>
+                <!-- fumante -->
+
+                <!-- bebidas alcóolicas -->
+                <div class="col-md-4">
+                    <label for="bebidas">Ingere bebidas alcóolicas?</label>
+                    <p>Sim</p>
+                    <label for="bebidas-resp-sim-qual">Qual bebida?</label>
+                    <p>Cerveja</p>
+                    <label for="bebidas-resp-sim-tempo">Há quanto empo?</label>
+                    <p>6 anos</p>
+                </div>
+                <!-- bebidas alcóolicas -->
+
+                <!-- drogas -->
+                <div class="col-md-4">
+                    <label for="drogas">É usuário de drogas?</label>
+                    <p>Não</p>
+                </div>
+                <!-- drogas -->
+            </div>
+        </div>
+        <!-- histórico médico -->
+
+        <br>
+
+        <!-- histórico odontológico -->
+        <div class="form-group list-group-item">
+            <h4>Histórico Odontológico</h4>
+
+            <br>
+
+            <div class="row">
+                <!-- localizacao -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="localizacao">Localização</label>
+                    <p>Localização</p>
+                </div>
+                <!-- localizacao -->
+
+                <!-- tamanho -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="tamanho">Tamanho</label>
+                    <p>Tamanho</p>
+                </div>
+                <!-- tamanho -->
+
+                <!-- cor -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="cor">Cor</label>
+                    <p>Cor</p>
+                </div>
+                <!-- cor -->
+
+                <!-- forma -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="forma">Forma</label>
+                    <p>Forma</p>
+                </div>
+                <!-- forma -->
+
+                <!-- inserção -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="insercao">Inserção</label>
+                    <p>Inserção</p>
+                </div>
+                <!-- inserção -->
+
+                <!-- fator etiológico -->
+                <div class="col-sm-6 col-md-4">
+                    <label for="fator-etiologico">Fator etiológico</label>
+                    <p>Fator etiológico</p>
+                </div>
+                <!-- fator etiológico -->
+            </div>
+
+            <br>
+
+            <div class="row">
+                <!-- ganglios -->
+                <div class="col-md-4">
+                    <label for="ganglios">Gânglios linfáticos palpáveis?</label>
+                    <p>Não</p>
+                </div>
+                <!-- ganglios -->
+
+                <!-- consistência -->
+                <div class="col-md-4">
+                    <label for="consistencia">Consistência</label>
+                    <p>Firme</p>
+                </div>
+                <!-- consistência -->
+
+                <!-- mobilidade -->
+                <div class="col-md-4">
+                    <label for="mobilidade">Mobilidade</label>
+                    <p>Sim</p>
+                </div>
+                <!-- mobilidade -->
+            </div>
+
+            <br>
+
+            <!-- diagnóstico clínico -->
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="diagnostico-clinico">Diagnóstico clínico</label>
+                    <p>Diagnóstico clínico...</p>
+                </div>
+            </div>
+            <!-- diagnóstico clínico -->
+
+            <br>
+
+            <!-- histopatológico -->
+            <div class="row">
+                <div class="col-md-12">
+                    <label for="histopatologico">Histopatológico</label>
+                    <p>Histopatológico</p>
+                </div>
+            </div>
+            <!-- histopatológico -->
+
+            <br>
+
+            <!-- imagem -->
+            <label>Imagens</label>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="../assets/images/user.png" class="img-responsive img-circle">
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/images/user.png" class="img-responsive img-circle">
+                </div>
+                <div class="col-md-4">
+                    <img src="../assets/images/user.png" class="img-responsive img-circle">
+                </div>
+            </div>
+            <!-- imagem -->
+
+            <!-- responder diagnóstico -->
+            <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-arrow-left"></span> Responder diagnóstico</button>
+            <!-- responder diagnóstico -->
+        </div>
+        <!-- histórico odontológico -->
+    </form>
+</div>
+<!-- novo diagnóstico -->

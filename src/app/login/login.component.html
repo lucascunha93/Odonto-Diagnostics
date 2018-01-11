@@ -1,0 +1,31 @@
+ <!-- box login -->
+ <div class="container pull-center">
+  <div class="col-xs-12 col-sm-6 col-md-3 box-login list-group-item">
+      <header>
+          <div class="col-md-12" align="center">
+              <h4>Login</h4>
+              <br>
+          </div>
+      </header>
+      <form (submit)="loginUser($event)">
+          <!-- usuário -->
+          <div class="form-group">
+              <label for="usuario">Usuário</label>
+              <input type="text" class="form-control" id="usuario" placeholder="Digite aqui" ngModel required>
+          </div>
+          <!-- usuário -->
+
+          <!-- senha -->
+          <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" id="senha" placeholder="Digite aqui" ngModel required email>
+          </div>
+          <!-- senha -->
+
+          <!-- logar -->
+          <input type="submit" class="btn btn-primary btn-group-justified" value="Logar" >
+          <!-- logar -->
+      </form>
+  </div>
+</div>
+<!-- box login -->

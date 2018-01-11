@@ -1,0 +1,16 @@
+  <div class="container">
+
+    <!-- diagnosticos -->
+    <div class="col-sm-9 col-md-9">
+        <div class="list-group-item">
+            <h3>Diagnósticos</h3>
+            <br>
+            <a
+            class="list-group-item list-group-item-success"
+            routerLink='../recdiag'
+            *ngFor="let diagnostic of diagnostics">
+            {{diagnostic.titulo}}</a>
+        </div>
+    </div>
+    <!-- diagnosticos -->
+  </div>
