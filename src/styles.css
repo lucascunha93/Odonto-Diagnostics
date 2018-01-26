@@ -19,3 +19,7 @@ header.header {
   margin-top: 10em !important;
   margin: 0 auto;
 }
+
+.has-sucess {
+  color: black;
+}

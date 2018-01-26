@@ -2,28 +2,30 @@
  <div class="container pull-center">
   <div class="col-xs-12 col-sm-6 col-md-3 box-login list-group-item">
       <header>
-          <div class="col-md-12" align="center">
+          <div  align="center">
               <h4>Login</h4>
               <br>
           </div>
       </header>
-      <form (submit)="loginUser($event)">
+
+      <form #form="ngForm" novalidate >
           <!-- usuário -->
-          <div class="form-group">
-              <label for="usuario">Usuário</label>
-              <input type="text" class="form-control" id="usuario" placeholder="Digite aqui" ngModel required>
-          </div>
+              <app-input errorMessage="Campo obrigátorio" label="Usuário" >
+                <input class="form-control" name="usuario"  placeholder="Digite aqui" minlength="3"
+                  ngModel required >
+              </app-input>
           <!-- usuário -->
 
           <!-- senha -->
-          <div class="form-group">
-              <label for="senha">Senha</label>
-              <input type="password" class="form-control" id="senha" placeholder="Digite aqui" ngModel required email>
-          </div>
+              <app-input errorMessage="Campo obrigatório" label="Senha">
+                <input type="password" class="form-control" name="senha" minlength="6" ngModel
+                  placeholder="Digite aqui" required autocomplete="off">
+              </app-input>
           <!-- senha -->
 
           <!-- logar -->
-          <input type="submit" class="btn btn-primary btn-group-justified" value="Logar" >
+          <input type="submit" (click)="login(form.value)" class="btn btn-primary btn-group-justified"
+            value="Logar" [disabled]="!form.valid">
           <!-- logar -->
       </form>
   </div>

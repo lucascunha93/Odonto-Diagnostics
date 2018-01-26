@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
@@ -13,12 +14,14 @@ import { NavAdminComponent } from './admin/nav-admin/nav-admin.component';
 import { ReceivedDiagnosticsComponent } from './admin/received-diagnostics/received-diagnostics.component';
 import { RegisterUserComponent } from './admin/register-user/register-user.component';
 import { ReplyComponent } from './admin/reply/reply.component';
-import { routing } from './app.router';
-import { AppService } from './app.service';
 import { EditUserProfileComponent } from './user/edit-user-profile/edit-user-profile.component';
 import { NavbarUserComponent } from './user/navbar-user/navbar-user.component';
 import { NewDiagnosticComponent } from './user/new-diagnostic/new-diagnostic.component';
 import { ScreenDiagnoticsUserComponent } from './user/screen-diagnotics-user/screen-diagnotics-user.component';
+import { InputComponent } from './shared/input/input.component';
+
+import { routing } from './app.router';
+import { AppService } from './app.service';
 
 @NgModule({
   declarations: [
@@ -36,12 +39,14 @@ import { ScreenDiagnoticsUserComponent } from './user/screen-diagnotics-user/scr
     EditUserProfileComponent,
     NavbarUserComponent,
     NewDiagnosticComponent,
-    ScreenDiagnoticsUserComponent
+    ScreenDiagnoticsUserComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
     routing,
-    HttpModule
+    HttpModule,
+    FormsModule
 
   ],
   providers: [AppService],

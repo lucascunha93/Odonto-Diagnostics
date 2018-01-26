@@ -1,0 +1,9 @@
+<div class="form-group has-feedback" [class.has-success]= " hasSucess() "
+                        [class.has-error]= " hasError() ">
+              <label >{{ label }}</label>
+
+              <ng-content></ng-content>
+
+              <span class="glyphicon glyphicon-ok form-control-feedback" *ngIf= " hasSucess() "><i class="has-feedback"></i></span>
+              <span *ngIf= " hasError() "> {{ errorMessage }}</span>
+          </div>
