@@ -1,7 +1,7 @@
 <!-- novo diagnóstico -->
 <div class="col-sm-9 col-md-9">
     <form class="list-group-item" routerLink="/replyDiagnostic">
-        <h3>{{ diagnosticAdmin?.titulo }}</h3>
+        <h3>{{diagnosticAdmin.titulo}}</h3>
 
         <br>
 
@@ -15,14 +15,14 @@
                 <!-- nome -->
                 <div class="col-sm-12 col-md-6">
                     <label for="nome">Nome</label>
-                    <p>{{ diagnosticAdmin?.nome }}</p>
+                    <p>Nome</p>
                 </div>
                 <!-- nome -->
 
                 <!-- naturalidade -->
                 <div class="col-sm-12 col-md-6">
                     <label for="naturalidade">Naturalidade</label>
-                    <p>{{ diagnosticAdmin?.naturalidade }}</p>
+                    <p>Naturalidade</p>
                 </div>
                 <!-- naturalidade -->
             </div>
@@ -44,14 +44,14 @@
                 <!-- data de nascimento -->
                 <div class="col-sm-12 col-md-6">
                     <label for="data-nascimento">Data de nascimento</label>
-                    <p>{{ diagnosticAdmin?.datanascimento }}</p>
+                    <p>dd/mm/aaaa</p>
                 </div>
                 <!-- data de nascimento -->
 
                 <!-- profissão -->
                 <div class="col-sm-12 col-md-6">
                     <label for="profissao">Profissão</label>
-                    <p>{{ diagnosticAdmin?.profissao }}</p>
+                    <p>Profissão</p>
                 </div>
                 <!-- profissão -->
             </div>
@@ -64,14 +64,14 @@
             <div class="row">
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <label for="escolaridade">Escolaridade</label>
-                    <p>{{ diagnosticAdmin?.escolaridade }}</p>
+                    <p>Escolaridade</p>
                 </div>
                 <!-- escolaridade -->
 
                 <!-- estado civil -->
                 <div class="col-xs-6 col-sm-6 col-md-6">
                     <label for="estado-civil">Estado civil</label>
-                    <p>{{ diagnosticAdmin?.estadocivil }}</p>
+                    <p>Estado civil</p>
                 </div>
                 <!-- estado civil -->
             </div>
@@ -90,7 +90,7 @@
                 <!-- tratamento médico -->
                 <div class="col-md-6">
                     <label for="tratamento-medico">Você está em tratamento médico?</label>
-                    <p>{{ diagnosticAdmin?.tratamentomedico }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- tratamento médico -->
 
@@ -99,7 +99,7 @@
                     <label for="acidente">Você já sofreu algum acidente?</label>
                     <p>Sim</p>
                     <label for="acidente-resp-sim">Qual?</label>
-                    <p>{{ diagnosticAdmin?.acidenterespsim }}</p>
+                    <p>Acidente...</p>
                 </div>
                 <!-- acidente -->
             </div>
@@ -113,42 +113,42 @@
                 <!-- pressao alta -->
                 <div class="col-sm-4 col-md-2">
                     <label for="pressao-alta">Pressão alta</label>
-                    <p>{{ diagnosticAdmin?.pressaoalta }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- pressao alta -->
 
                 <!-- anemia -->
                 <div class="col-sm-4 col-md-2">
                     <label for="anemia">Anemia</label>
-                    <p>{{ diagnosticAdmin?.anemia }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- anemia -->
 
                 <!-- diabetes -->
                 <div class="col-sm-4 col-md-2">
                     <label for="diabetes">Diabetes</label>
-                    <p>{{ diagnosticAdmin?.diabetes }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- diabetes -->
 
                 <!-- hepatite -->
                 <div class="col-sm-4 col-md-2">
                     <label for="hepatite">Hepatite</label>
-                    <p>{{ diagnosticAdmin?.hepatite }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- hepatite -->
 
                 <!-- dst -->
                 <div class="col-sm-4 col-md-2">
                     <label for="dst">DST</label>
-                    <p>{{ diagnosticAdmin?.dst }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- dst -->
 
                 <!-- aids -->
                 <div class="col-sm-4 col-md-2">
                     <label for="aids">AIDS</label>
-                    <p>{{ diagnosticAdmin?.aids }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- aids -->
             </div>
@@ -162,14 +162,14 @@
                     <label for="medicamento">Você toma algum medicamento?&nbsp;</label>
                     <p>Sim</p>
                     <label for="medicamento-resp-sim">Qual?</label>
-                    <p>{{ diagnosticAdmin?.medicamentorespsim }}</p>
+                    <p>Medicamento...</p>
                 </div>
                 <!-- medicamento -->
 
                 <!-- ex-fumante -->
                 <div class="col-md-6">
                     <label for="ex-fumante">Você é ex-fumante?</label>
-                    <p>{{ diagnosticAdmin?.exfumanterespsimtempo }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- ex-fumante -->
             </div>
@@ -179,35 +179,26 @@
             <div class="row">
                 <!-- fumante -->
                 <div class="col-md-4">
-                  <label for="fumante">Você fuma?</label>
-                  <p>{{ diagnosticAdmin?.fuma }}</p>
-                  <label for="fumante-resp-sim-quant">Quantidade por dia?</label>
-                  <p>{{ diagnosticAdmin?.fumanterespsimquant }}</p>
-                  <label for="fumante-resp-sim-tempo">Há quanto tempo?</label>
-                  <p>{{ diagnosticAdmin?.fumanterespsimtempo }}</p>
-
+                    <label for="fumante">Você fuma?</label>
+                    <p>Não</p>
                 </div>
                 <!-- fumante -->
 
                 <!-- bebidas alcóolicas -->
                 <div class="col-md-4">
                     <label for="bebidas">Ingere bebidas alcóolicas?</label>
-                    <p>{{ diagnosticAdmin?.bebe }}</p>
+                    <p>Sim</p>
                     <label for="bebidas-resp-sim-qual">Qual bebida?</label>
-                    <p>{{ diagnosticAdmin?.bebidasrespsimqual }}</p>
+                    <p>Cerveja</p>
                     <label for="bebidas-resp-sim-tempo">Há quanto empo?</label>
-                    <p>{{ diagnosticAdmin?.bebidasrespsimtempo }}</p>
+                    <p>6 anos</p>
                 </div>
                 <!-- bebidas alcóolicas -->
 
                 <!-- drogas -->
                 <div class="col-md-4">
                     <label for="drogas">É usuário de drogas?</label>
-                    <p>{{diagnosticAdmin?.drogas}}</p>
-                    <label for="drogas-resp-sim-qual">Qual?</label>
-                    <p>{{ diagnosticAdmin?.drogasrespsimqual }}</p>
-                    <label for="drogas-resp-sim-tempo">Há quanto tempo?</label>
-                    <p>{{ diagnosticAdmin?.drogasrespsimtempo }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- drogas -->
             </div>
@@ -226,42 +217,42 @@
                 <!-- localizacao -->
                 <div class="col-sm-6 col-md-4">
                     <label for="localizacao">Localização</label>
-                    <p>{{ diagnosticAdmin?.localizacao }}</p>
+                    <p>Localização</p>
                 </div>
                 <!-- localizacao -->
 
                 <!-- tamanho -->
                 <div class="col-sm-6 col-md-4">
                     <label for="tamanho">Tamanho</label>
-                    <p>{{ diagnosticAdmin?.tamanho }}</p>
+                    <p>Tamanho</p>
                 </div>
                 <!-- tamanho -->
 
                 <!-- cor -->
                 <div class="col-sm-6 col-md-4">
                     <label for="cor">Cor</label>
-                    <p>{{ diagnosticAdmin?.cor }}</p>
+                    <p>Cor</p>
                 </div>
                 <!-- cor -->
 
                 <!-- forma -->
                 <div class="col-sm-6 col-md-4">
                     <label for="forma">Forma</label>
-                    <p>{{ diagnosticAdmin?.forma }}</p>
+                    <p>Forma</p>
                 </div>
                 <!-- forma -->
 
                 <!-- inserção -->
                 <div class="col-sm-6 col-md-4">
                     <label for="insercao">Inserção</label>
-                    <p>{{ diagnosticAdmin?.insercao }}</p>
+                    <p>Inserção</p>
                 </div>
                 <!-- inserção -->
 
                 <!-- fator etiológico -->
                 <div class="col-sm-6 col-md-4">
                     <label for="fator-etiologico">Fator etiológico</label>
-                    <p>{{ diagnosticAdmin?.fatoretiologico }}</p>
+                    <p>Fator etiológico</p>
                 </div>
                 <!-- fator etiológico -->
             </div>
@@ -272,21 +263,21 @@
                 <!-- ganglios -->
                 <div class="col-md-4">
                     <label for="ganglios">Gânglios linfáticos palpáveis?</label>
-                    <p>{{ diagnosticAdmin?.gangliosrespsim }}</p>
+                    <p>Não</p>
                 </div>
                 <!-- ganglios -->
 
                 <!-- consistência -->
                 <div class="col-md-4">
                     <label for="consistencia">Consistência</label>
-                    <p>{{ diagnosticAdmin?.consistencia }}</p>
+                    <p>Firme</p>
                 </div>
                 <!-- consistência -->
 
                 <!-- mobilidade -->
                 <div class="col-md-4">
                     <label for="mobilidade">Mobilidade</label>
-                    <p>{{ diagnosticAdmin?.mobilidade }}</p>
+                    <p>Sim</p>
                 </div>
                 <!-- mobilidade -->
             </div>
@@ -297,7 +288,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <label for="diagnostico-clinico">Diagnóstico clínico</label>
-                    <p>{{ diagnosticAdmin?.diagnosticoclinico }}</p>
+                    <p>Diagnóstico clínico...</p>
                 </div>
             </div>
             <!-- diagnóstico clínico -->
@@ -308,7 +299,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <label for="histopatologico">Histopatológico</label>
-                    <p>{{ diagnosticAdmin?.histopatologico }}</p>
+                    <p>Histopatológico</p>
                 </div>
             </div>
             <!-- histopatológico -->

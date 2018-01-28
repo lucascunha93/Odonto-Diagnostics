@@ -20,10 +20,4 @@ export class AppService {
           .map( response => response.json())
           .catch(ErrorHandler.handlerError);
     }
-
-    diagnosticById(titulo: string): Observable<DiagnosticAdmin> {
-      return this.http.get(`${ODONTO_API}/diagnosticos/${titulo}`)
-        .map(response => response.json())
-        .catch(ErrorHandler.handlerError);
-    }
 }

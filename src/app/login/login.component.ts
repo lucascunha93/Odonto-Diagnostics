@@ -13,12 +13,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  login(check: any) {
-    console.log( check );
-  }
-
-  /*loginUser(e) {
+  loginUser(e) {
     const username = e.target.elements[0].value;
     const password = e.target.elements[1].value;
     console.log(username, password);
@@ -28,5 +23,5 @@ export class LoginComponent implements OnInit {
       }else {
         this.router.navigate(['user']);
       }
-    }*/
+  }
 }

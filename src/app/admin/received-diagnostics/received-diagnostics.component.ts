@@ -10,14 +10,12 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ReceivedDiagnosticsComponent implements OnInit {
 
-    diagnosticAdmin: DiagnosticAdmin;
+  @Input() diagnosticAdmin: DiagnosticAdmin;
 
   constructor( private appService: AppService,
                 private route: ActivatedRoute ) { }
 
   ngOnInit() {
-      this.appService.diagnosticById(this.route.snapshot.params['titulo'])
-        .subscribe(diagnostic => this.diagnosticAdmin = diagnostic);
   }
 
 }
