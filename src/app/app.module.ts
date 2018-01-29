@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
@@ -19,6 +20,7 @@ import { EditUserProfileComponent } from './user/edit-user-profile/edit-user-pro
 import { NavbarUserComponent } from './user/navbar-user/navbar-user.component';
 import { NewDiagnosticComponent } from './user/new-diagnostic/new-diagnostic.component';
 import { ScreenDiagnoticsUserComponent } from './user/screen-diagnotics-user/screen-diagnotics-user.component';
+import { InputComponent } from './shared/input/input.component';
 
 @NgModule({
   declarations: [
@@ -36,11 +38,13 @@ import { ScreenDiagnoticsUserComponent } from './user/screen-diagnotics-user/scr
     EditUserProfileComponent,
     NavbarUserComponent,
     NewDiagnosticComponent,
-    ScreenDiagnoticsUserComponent
+    ScreenDiagnoticsUserComponent,
+    InputComponent
   ],
   imports: [
     BrowserModule,
     routing,
+    FormsModule,
     HttpModule
 
   ],
