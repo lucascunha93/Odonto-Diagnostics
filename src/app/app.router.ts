@@ -24,7 +24,7 @@ export const ROUTES: Routes = [
       {path: '', redirectTo: 'scndiag', pathMatch: 'full'},
       {path: 'scndiag', component: ScreenDiagnosticComponent},
       {path: 'editprofileadm', component: EditAdminProfileComponent},
-      {path: 'recdiag', component: ReceivedDiagnosticsComponent},
+      {path: 'recdiag/:id', component: ReceivedDiagnosticsComponent},
       {path: 'reguser', component: RegisterUserComponent},
       {path: 'repdiag', component: ReplyComponent},
     ]

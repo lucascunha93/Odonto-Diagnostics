@@ -7,7 +7,7 @@
             <br>
             <a
             class="list-group-item list-group-item-success"
-            routerLink='../recdiag'
+            [routerLink]="['../recdiag', diagnostic.id]"
             *ngFor="let diagnostic of diagnostics">
             {{diagnostic.titulo}}</a>
         </div>
