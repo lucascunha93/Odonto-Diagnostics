@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 import { AppService } from './../../app.service';
-import { DiagnosticAdmin } from './../../app.diagnostic';
+import { Diagnostic } from './../../app.diagnostic';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -10,7 +10,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class ReceivedDiagnosticsComponent implements OnInit {
 
-  diagnosticAdmin: DiagnosticAdmin;
+  diagnosticAdmin: Diagnostic;
 
   constructor( private appService: AppService,
                 private route: ActivatedRoute ) { }

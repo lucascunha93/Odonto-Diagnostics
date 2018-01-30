@@ -1,7 +1,7 @@
 import { AppService } from './../../app.service';
 import { Component, OnInit } from '@angular/core';
 
-import { DiagnosticForm } from './new-diagnostic.model';
+import { Diagnostic } from '../../app.diagnostic';
 
 @Component({
   selector: 'app-new-diagnostic',
@@ -14,7 +14,7 @@ export class NewDiagnosticComponent implements OnInit {
   ngOnInit() {
   }
 
-  enviaForm( envia: DiagnosticForm ) {
+  enviaForm( envia: Diagnostic ) {
     console.log( envia );
   }
 

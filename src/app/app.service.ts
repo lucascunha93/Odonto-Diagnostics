@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
-import { DiagnosticAdmin } from './app.diagnostic';
+import { Diagnostic } from './app.diagnostic';
 
 import { ODONTO_API } from './app.api';
 import { ErrorHandler } from './app.error.handler';
@@ -15,12 +15,12 @@ export class AppService {
 
   constructor(private http: Http) {}
 
-    diagnostics(): Observable<DiagnosticAdmin []> {
+    diagnostics(): Observable<Diagnostic []> {
         return this.http.get(`${ODONTO_API}/diagnosticos`)
           .map( response => response.json())
           .catch(ErrorHandler.handlerError);
     }
-    diagnosticById(titulo: string): Observable<DiagnosticAdmin> {
+    diagnosticById(titulo: string): Observable<Diagnostic> {
       return this.http.get(`${ODONTO_API}/diagnosticos/${titulo}`)
         .map(response => response.json())
         .catch(ErrorHandler.handlerError);

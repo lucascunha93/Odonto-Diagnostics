@@ -1,574 +1,579 @@
 <!-- novo diagnóstico -->
 
 <div class="col-sm-9 col-md-9">
-        <form class="list-group-item" #formNewDiagnostic="ngForm" novalidate >
-            <h3>Abrir diagnóstico</h3>
+    <form class="list-group-item" #formNewDiagnostic="ngForm" novalidate >
+        <h3>Abrir diagnóstico</h3>
+
+        <br>
+
+        <!-- titulo -->
+        <div class="form-group list-group-item">
+            <h4>Título do diagnóstico</h4>
 
             <br>
 
-            <!-- titulo -->
-            <div class="form-group list-group-item">
-                <h4>Título do diagnóstico</h4>
-
-                <br>
-
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <app-input errorMessage="Campo obrigátorio" label="Título" >
-                          <input type="text" class="form-control" name="titulo"
-                          id="titulo" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <app-input errorMessage="Campo obrigátorio" label="Título" >
+                        <input type="text" class="form-control" name="titulo"
+                        id="titulo" placeholder="Digite aqui" ngModel required>
+                    </app-input>
                 </div>
             </div>
-            <!-- titulo -->
+        </div>
+        <!-- titulo -->
+
+        <br>
+
+        <!-- informações do paciente -->
+        <div class="form-group list-group-item">
+            <h4>Informações do Paciente</h4>
 
             <br>
 
-            <!-- informações do paciente -->
-            <div class="form-group list-group-item">
-                <h4>Informações do Paciente</h4>
+        <div class="row">
+        <!-- nome -->
+        <div class="col-sm-12 col-md-6">
+            <app-input errorMessage="Campo obrigátorio" label="Usuário" >
+                <input type="text" class="form-control has-sucess" name="nome" id="nome"
+                placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- nome -->
 
-                <br>
+        <!-- naturalidade -->
+        <div class="col-sm-12 col-md-6">
+            <app-input errorMessage="Campo obrigátorio" label="Naturalidade" >
+                <input type="text" class="form-control" name="naturalidade"
+                id="naturalidade" placeholder="Digite aqui" ngModel required >
+            </app-input>
+        </div>
+        <!-- naturalidade -->
+        </div>
 
-                <div class="row">
-                    <!-- nome -->
-                    <div class="col-sm-12 col-md-6">
-                        <app-input errorMessage="Campo obrigátorio" label="Usuário" >
-                          <input type="text" class="form-control has-sucess" name="nome" id="nome"
-                            placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- nome -->
+    <br>
 
-                    <!-- naturalidade -->
-                    <div class="col-sm-12 col-md-6">
-                        <app-input errorMessage="Campo obrigátorio" label="Naturalidade" >
-                          <input type="text" class="form-control" name="naturalidade"
-                            id="naturalidade" placeholder="Digite aqui" ngModel required >
-                        </app-input>
-                    </div>
-                    <!-- naturalidade -->
+        <!-- sexo -->
+        <div class="row">
+            <div class="col-sm-12 col-md-6" >
+                <label for="sexo">Sexo</label>
+                <div class="radio">
+                    <label><input type="radio" name="sexoOption" id="sexo-masculino" value="Masculino"
+                         ngModel required >Masculino</label>
                 </div>
-
-                <br>
-
-                <!-- sexo -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-6" >
-                        <label for="sexo">Sexo</label>
-                        <div class="radio">
-                            <label><input type="radio" name="sexoOption" id="sexo-masculino" value="Masculino" ngModel required >Masculino</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="sexoOption" id="sexo-feminino" value="Feminino" ngModel required >Feminino</label>
-                        </div>
-                    </div>
-                </div>
-                <!-- sexo -->
-
-                <br>
-
-                <div class="row">
-                    <!-- data de nascimento -->
-                    <div class="col-sm-12 col-md-6">
-                        <app-input errorMessage="Campo obrigátorio" label="Data de nascimento" for="data-nascimento">
-                          <input type="date" class="form-control" maxlength="10" name="datanascimento"
-                              id="data-nascimento" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- data de nascimento -->
-
-                    <!-- profissão -->
-                    <div class="col-sm-12 col-md-6">
-                        <app-input errorMessage="Campo obrigátorio" label="Profissão" >
-                          <input type="text" class="form-control" name="profissao"
-                              id="profissao" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- profissão -->
-                </div>
-
-
-                <br>
-
-
-                <!-- escolaridade -->
-                <div class="row">
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <label for="escolaridade">Escolaridade</label>
-                        <div class="radio">
-                            <label><input type="radio" name="escolaridadeOption" id="escolaridadenenhuma" value="Nenhuma"
-                               ngModel required>Nenhuma</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="escolaridadeOption" id="escolaridade1grau" value="1º Grau"
-                               ngModel required>1º Grau</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="escolaridadeOption" id="escolaridade2grau" value="2º Grau"
-                               ngModel required>2º Grau</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="escolaridadeOption" id="escolaridadesuperior"
-                               value="Superior" ngModel required>Superior</label>
-                        </div>
-                    </div>
-                    <!-- escolaridade -->
-
-                    <!-- estado civil -->
-                    <div class="col-xs-6 col-sm-6 col-md-6">
-                        <label for="estado-civil">Estado civil</label>
-                        <div class="radio">
-                            <label><input type="radio" name="estadocivilOption" id="estado-civil-casado" value="Casado"
-                               ngModel required>Casado</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="estadocivilOption" id="estado-civil-solteiro" value="Solteiro"
-                              ngModel required>Solteiro</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="estadocivilOption" id="estado-civil-divorciado"
-                              value="Divorciado" ngModel required>Divorciado</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="estadocivilOption" id="estado-civil-viuvo" value="Viúvo"
-                              ngModel required>Viúvo</label>
-                        </div>
-                    </div>
-                    <!-- estado civil -->
+                <div class="radio">
+                    <label><input type="radio" name="sexoOption" id="sexo-feminino" value="Feminino"
+                         ngModel required >Feminino</label>
                 </div>
             </div>
-            <!-- informações do paciente -->
+        </div>
+        <!-- sexo -->
 
-            <br>
+    <br>
 
-            <!-- histórico médico -->
-            <div class="form-group list-group-item">
-                <h4>Histórico Médico</h4>
+    <div class="row">
+        <!-- data de nascimento -->
+        <div class="col-sm-12 col-md-6">
+            <app-input errorMessage="Campo obrigátorio" label="Data de nascimento" 
+                for="data-nascimento">
+                <input type="date" class="form-control" maxlength="10" name="datanascimento"
+                    id="data-nascimento" ngModel required>
+            </app-input>
+        </div>
+        <!-- data de nascimento -->
 
-                <br>
-
-                <div class="row">
-                    <!-- tratamento médico -->
-                    <div class="col-md-6" >
-
-                        <label for="tratamentomedicoOption">Você está em tratamento médico?</label>
-                        <div class="radio">
-                          <label><input type="radio" name="tratamentomedicoOption" id="tratamentomedicosim" value="Sim"
-                             #ipttratamento="ngModel" ngModel required >Sim</label>
-                        </div>
-                        <div class="radio">
-                          <label><input type="radio" name="tratamentomedicoOption" id="tratamentomediconao" value="Não"
-                            #ipttratamento="ngModel" ngModel required >Não</label>
-                        </div>
-
-                        <div *ngIf="ipttratamento.value === 'Sim'">
-                          <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                            <input type="text" class="form-control" name="tratamentomedicosim"
-                              id="tratamentomedicosim" placeholder="Digite aqui" ngModel required>
-                          </app-input>
-                        </div>
-                    </div>
-                    <!-- tratamento médico -->
-
-                    <!-- acidente -->
-                    <div class="col-md-6">
-                      <label for="acidente">Você já sofreu algum acidente?</label>
-                      <div class="radio">
-                        <label><input type="radio" name="acidenteOption" id="acidente-sim" #iptacidente="ngModel"
-                          value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="acidenteOption" id="acidente-nao" value="Não" ngModel required
-                          >Não</label>
-                      </div>
-
-                      <div *ngIf="iptacidente.value === 'Sim'" >
-                        <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                          <input type="text" class="form-control" name="acidenterespsim"
-                              id="acidente-resp-sim" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                  </div>
-                  <!-- acidente -->
-              </div>
-
-              <br>
-
-              <!-- problemas de saúde -->
-              <label>Você tem ou teve algum dos problemas de saúde abaixo?</label>
-
-              <div class="row">
-                  <!-- pressao alta -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="pressao-alta">Pressão alta</label>
-                      <div class="radio">
-                          <label><input type="radio" name="pressaoaltaOption" id="pressao-alta-sim" value="Sim"
-                            ngModel required >Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="pressaoaltaOption" id="pressao-alta-nao" value="Não"
-                            ngModel required >Não</label>
-                      </div>
-                  </div>
-                  <!-- pressao alta -->
-
-                  <!-- anemia -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="anemia">Anemia</label>
-                      <div class="radio">
-                          <label><input type="radio" name="anemiaOption" id="anemia-sim" value="Sim" ngModel required
-                            >Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="anemiaOption" id="anemia-nao" value="Não" ngModel required
-                            >Não</label>
-                      </div>
-                  </div>
-                  <!-- anemia -->
-
-                  <!-- diabetes -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="diabetes">Diabetes</label>
-                      <div class="radio">
-                          <label><input type="radio" name="diabetesOption" id="diabetes-sim" value="Sim" ngModel required
-                            >Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="diabetesOption" id="diabetes-nao" value="Não" ngModel required
-                            >Não</label>
-                      </div>
-                  </div>
-                  <!-- diabetes -->
-
-                  <!-- hepatite -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="hepatite">Hepatite</label>
-                      <div class="radio">
-                          <label><input type="radio" name="hepatiteOption" id="hepatite-sim" value="Sim" ngModel required
-                            >Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="hepatiteOption" id="hepatite-nao" value="Não" ngModel required
-                            >Não</label>
-                      </div>
-                  </div>
-                  <!-- hepatite -->
-
-                  <!-- dst -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="dst">DST</label>
-                      <div class="radio">
-                          <label><input type="radio" name="dstOption" id="dst-sim" value="Sim" ngModel required
-                            >Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="dstOption" id="dst-nao" value="Não" ngModel required
-                            >Não</label>
-                      </div>
-                  </div>
-                  <!-- dst -->
-
-                  <!-- aids -->
-                  <div class="col-sm-4 col-md-2">
-                      <label for="aids">AIDS</label>
-                      <div class="radio">
-                          <label><input type="radio" name="aidsOption" id="aids-sim" value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="aidsOption" id="aids-nao" value="Não" ngModel required>Não</label>
-                      </div>
-                  </div>
-                  <!-- aids -->
-              </div>
-              <!-- problemas de saúde -->
-
-                <br>
-
-                <div class="row">
-                    <!-- medicamento -->
-                    <div class="col-md-6">
-                      <label for="medicamento">Você toma algum medicamento?&nbsp;</label>
-                      <div class="radio">
-                          <label><input type="radio" name="medicamentoOption" id="medicamento-sim" #iptmedicamento="ngModel"
-                            value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="medicamentoOption" id="medicamento-nao" value="Não" ngModel
-                           required>Não</label>
-                      </div>
-                      <div *ngIf="iptmedicamento.value === 'Sim'">
-                        <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                          <input type="text" class="form-control" name="medicamento-resp-sim"
-                              id="medicamentorespsim" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                  </div>
-                  <!-- medicamento -->
-
-                    <!-- ex-fumante -->
-                    <div class="col-md-6">
-                      <label for="ex-fumante">Você é ex-fumante?</label>
-                      <div class="radio">
-                          <label><input type="radio" name="exfumanteOption" id="ex-fumante-sim" #iptexfumante="ngModel"
-                             value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="exfumanteOption" id="ex-fumante-nao" value="Não" ngModel
-                          required>Não</label>
-                      </div>
-                      <div *ngIf="iptexfumante.value === 'Sim'">
-                        <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                          <input type="text" class="form-control" name="ex-fumante-resp-sim-tempo"
-                              id="exfumanterespsimtempo" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                  </div>
-                  <!-- ex-fumante -->
-                </div>
-
-                <br>
-
-                <div class="row">
-                    <!-- fumante -->
-                    <div class="col-md-4">
-                      <label for="fumante">Você fuma?</label>
-                      <div class="radio">
-                        <label><input type="radio" name="fumanteOption" id="fumante-sim" #iptfumante="ngModel"
-                          value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="fumanteOption" id="fumante-nao"  value="Não" ngModel
-                            required>Não</label>
-                      </div>
-                      <div *ngIf="iptfumante.value === 'Sim'">
-                        <app-input errorMessage="Campo obrigátorio" label="Quantidade por dia?" >
-                          <input type="text" class="form-control" name="fumante-resp-sim-quant"
-                              id="fumante-resp-sim-quant" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                        <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                          <input type="text" class="form-control" name="fumante-resp-sim-tempo"
-                              id="fumanterespsimtempo" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                  </div>
-                  <!-- fumante -->
-
-                  <!-- bebidas alcóolicas -->
-                  <div class="col-md-4">
-                      <label for="bebidas">Ingere bebidas alcóolicas?</label>
-                      <div class="radio">
-                          <label><input type="radio" name="bebidas" id="bebidas-sim" #iptbebida="ngModel" value="Sim"
-                             ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                        <label><input type="radio" name="bebidas" id="bebidas-nao" value="Não" ngModel required
-                          >Não</label>
-                      </div>
-                      <div *ngIf="iptbebida.value === 'Sim'">
-                        <app-input errorMessage="Campo obrigátorio" label="Qual bebida?" >
-                          <input type="text" class="form-control" name="bebidas-resp-sim-qual"
-                              id="bebidasrespsimqual" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                        <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                          <input type="text" class="form-control" name="bebidas-resp-sim-tempo"
-                              id="bebidasrespsimtempo" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                  </div>
-                  <!-- bebidas alcóolicas -->
-
-                    <!-- drogas -->
-                    <div class="col-md-4">
-                        <label for="drogas">É usuário de drogas?</label>
-                        <div class="radio">
-                          <label><input type="radio" name="drogasOption" id="drogas-sim" #iptdroga="ngModel" value="Sim"
-                            ngModel required>Sim</label>
-                      </div>
-                        <div class="radio">
-                            <label><input type="radio" name="drogasOption" id="drogas-nao" value="Não" ngModel required
-                              >Não</label>
-                      </div>
-                      <div *ngIf="iptdroga.value === 'Sim'">
-                        <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                          <input type="text" class="form-control" name="drogas-resp-sim-qual"
-                            id="drogasrespsimqual" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                        <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                          <input type="text" class="form-control" name="drogas-resp-sim-tempo"
-                            id="drogasrespsimtempo" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                      </div>
-                    </div>
-                  <!-- drogas -->
-                </div>
-            </div>
-            <!-- histórico médico -->
-
-            <br>
-
-            <!-- histórico odontológico -->
-            <div class="form-group list-group-item">
-                <h4>Histórico Odontológico</h4>
-
-                <br>
-
-                <div class="row">
-                    <!-- localizacao -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Localização" >
-                          <input type="text" class="form-control" name="localizacao"
-                              id="localizacao" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- localizacao -->
-
-                    <!-- tamanho -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Tamanho" >
-                          <input type="text" class="form-control" name="tamanho"
-                              id="tamanho" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- tamanho -->
-
-                    <!-- cor -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Cor" >
-                          <input type="text" class="form-control" name="cor" id="cor"
-                              placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- cor -->
-
-                    <!-- forma -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Forma" >
-                          <input type="text" class="form-control" name="forma" id="forma"
-                              placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- forma -->
-
-                    <!-- inserção -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Inserção" >
-                          <input type="text" class="form-control" name="insercao"
-                              id="insercao" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- inserção -->
-
-                    <!-- fator etiológico -->
-                    <div class="col-sm-6 col-md-4">
-                        <app-input errorMessage="Campo obrigátorio" label="Fator Etiológico" >
-                          <input type="text" class="form-control" name="fator-etiologico"
-                              id="fator-etiologico" placeholder="Digite aqui" ngModel required>
-                        </app-input>
-                    </div>
-                    <!-- fator etiológico -->
-                </div>
-
-                <br>
-
-                <div class="row">
-                  <!-- ganglios -->
-                  <div class="col-md-4">
-                      <label for="ganglios">Gânglios linfáticos palpáveis?</label>
-                      <div class="radio">
-                        <label><input type="radio" name="gangliosOption" id="ganglios-sim" #iptganglios="ngModel"
-                           value="Sim" ngModel required>Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="gangliosOption" id="ganglios-nao" value="Não" ngModel
-                            required>Não</label>
-                      </div>
-                    <div *ngIf="iptganglios.value === 'Sim'">
-                      <app-input errorMessage="Campo obrigátorio" label="Quais?" >
-                        <input type="text" class="form-control" name="ganglios-resp-sim"
-                            id="gangliosrespsim" placeholder="Digite aqui" ngModel required>
-                      </app-input>
-                    </div>
-                  </div>
-                  <!-- ganglios -->
-
-                    <!-- consistência -->
-                    <div class="col-md-4">
-                        <label for="consistencia">Consistência</label>
-                        <div class="radio">
-                            <label><input type="radio" name="consistenciaOption" id="consistencia-firme" value="Firme"
-                              ngModel required>Firme</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="consistenciaOption" id="consistencia-depressivel"
-                              value="Depressível" ngModel required>Depressível</label>
-                        </div>
-                    </div>
-                    <!-- consistência -->
-
-                    <!-- mobilidade -->
-                    <div class="col-md-4">
-                      <label for="mobilidade">Mobilidade</label>
-                      <div class="radio">
-                          <label><input type="radio" name="mobilidadeOption" id="mobilidadesim" value="Sim" ngModel
-                            required>Sim</label>
-                      </div>
-                      <div class="radio">
-                          <label><input type="radio" name="mobilidadeOption" id="mobilidadenao" value="Não" ngModel
-                            required>Não</label>
-                      </div>
-                  </div>
-                  <!-- mobilidade -->
-                </div>
-
-                <br>
-
-                <!-- diagnóstico clínico -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <app-input errorMessage="Campo obrigátorio" label="Diagnóstico clínico" >
-                          <textarea name="diagnosticoclinico" id="diagnostico-clinico"
-                              class="form-control" placeholder="Digite aqui" ngModel required></textarea>
-                        </app-input>
-                    </div>
-                </div>
-                <!-- diagnóstico clínico -->
-
-                <br>
-
-                <!-- histopatológico -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <app-input errorMessage="Campo obrigátorio" label="Hispátologico" >
-                          <textarea name="histopatologico" id="histopatologico"
-                              class="form-control" placeholder="Digite aqui" ngModel required></textarea>
-                        </app-input>
-                    </div>
-                </div>
-                <!-- histopatológico -->
-
-                <br>
-
-                <!-- imagem -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <label for="img-diagnostico">Imagens</label>
-                        <input class="form-control" type="file" id="img-diagnostico" >
-                    </div>
-                </div>
-                <!-- imagem -->
-
-                <br>
-
-                <!-- enviar diagnostico -->
-                <button type="submit" class="btn btn-primary" (click)="enviaForm(formNewDiagnostic.value)"
-                [disabled]="formNewDiagnostic.invalid"><span class="glyphicon glyphicon-arrow-right"></span>
-                  Enviar diagnóstico</button>
-                <!-- enviar diagnostico -->
-
-            </div>
-            <!-- histórico odontológico -->
-        </form>
+        <!-- profissão -->
+        <div class="col-sm-12 col-md-6">
+            <app-input errorMessage="Campo obrigátorio" label="Profissão" >
+                <input type="text" class="form-control" name="profissao"
+                    id="profissao" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- profissão -->
     </div>
-    <!-- novo diagnóstico -->
+
+
+    <br>
+
+
+    <!-- escolaridade -->
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <label for="escolaridade">Escolaridade</label>
+            <div class="radio">
+                <label><input type="radio" name="escolaridadeOption" id="escolaridadenenhuma" 
+                    value="Nenhuma" ngModel required>Nenhuma</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="escolaridadeOption" id="escolaridade1grau" 
+                    value="1º Grau" ngModel required>1º Grau</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="escolaridadeOption" id="escolaridade2grau" 
+                    value="2º Grau" ngModel required>2º Grau</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="escolaridadeOption" id="escolaridadesuperior"
+                    value="Superior" ngModel required>Superior</label>
+            </div>
+        </div>
+        <!-- escolaridade -->
+
+        <!-- estado civil -->
+        <div class="col-xs-6 col-sm-6 col-md-6">
+            <label for="estado-civil">Estado civil</label>
+            <div class="radio">
+                <label><input type="radio" name="estadocivilOption" id="estado-civil-casado" 
+                    value="Casado" ngModel required>Casado</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="estadocivilOption" id="estado-civil-solteiro" 
+                    value="Solteiro" ngModel required>Solteiro</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="estadocivilOption" id="estado-civil-divorciado"
+                    value="Divorciado" ngModel required>Divorciado</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="estadocivilOption" id="estado-civil-viuvo" 
+                    value="Viúvo" ngModel required>Viúvo</label>
+            </div>
+        </div>
+        <!-- estado civil -->
+    </div>
+    </div>
+        <!-- informações do paciente -->
+
+        <br>
+
+        <!-- histórico médico -->
+        <div class="form-group list-group-item">
+            <h4>Histórico Médico</h4>
+
+            <br>
+
+        <div class="row">
+        <!-- tratamento médico -->
+        <div class="col-md-6" >
+
+            <label for="tratamentomedicoOption">Você está em tratamento médico?</label>
+            <div class="radio">
+                <label><input type="radio" name="tratamentomedicoOption" id="tratamentomedicosim" 
+                    value="Sim" #ipttratamento="ngModel" ngModel required >Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="tratamentomedicoOption" id="tratamentomediconao" 
+                    value="Não" #ipttratamento="ngModel" ngModel required >Não</label>
+            </div>
+
+            <div *ngIf="ipttratamento.value === 'Sim'">
+                <app-input errorMessage="Campo obrigátorio" label="Qual?" >
+                <input type="text" class="form-control" name="tratamentomedicosim"
+                    id="tratamentomedicosim" placeholder="Digite aqui" ngModel required>
+                </app-input>
+            </div>
+        </div>
+        <!-- tratamento médico -->
+
+        <!-- acidente -->
+        <div class="col-md-6">
+            <label for="acidente">Você já sofreu algum acidente?</label>
+            <div class="radio">
+            <label><input type="radio" name="acidenteOption" id="acidente-sim" #iptacidente="ngModel"
+                value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+            <label><input type="radio" name="acidenteOption" id="acidente-nao" value="Não" ngModel 
+                required>Não</label>
+            </div>
+
+            <div *ngIf="iptacidente.value === 'Sim'" >
+            <app-input errorMessage="Campo obrigátorio" label="Qual?" >
+                <input type="text" class="form-control" name="acidenterespsim"
+                    id="acidente-resp-sim" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- acidente -->
+    </div>
+
+            <br>
+
+            <!-- problemas de saúde -->
+            <label>Você tem ou teve algum dos problemas de saúde abaixo?</label>
+
+            <div class="row">
+        <!-- pressao alta -->
+        <div class="col-sm-4 col-md-2">
+            <label for="pressao-alta">Pressão alta</label>
+            <div class="radio">
+                <label><input type="radio" name="pressaoaltaOption" id="pressao-alta-sim" value="Sim"
+                ngModel required >Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="pressaoaltaOption" id="pressao-alta-nao" value="Não"
+                ngModel required >Não</label>
+            </div>
+        </div>
+        <!-- pressao alta -->
+
+        <!-- anemia -->
+        <div class="col-sm-4 col-md-2">
+            <label for="anemia">Anemia</label>
+            <div class="radio">
+                <label><input type="radio" name="anemiaOption" id="anemia-sim" value="Sim" 
+                    ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="anemiaOption" id="anemia-nao" value="Não" 
+                    ngModel required >Não</label>
+            </div>
+        </div>
+        <!-- anemia -->
+
+        <!-- diabetes -->
+        <div class="col-sm-4 col-md-2">
+            <label for="diabetes">Diabetes</label>
+            <div class="radio">
+                <label><input type="radio" name="diabetesOption" id="diabetes-sim" value="Sim" 
+                    ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="diabetesOption" id="diabetes-nao" value="Não" 
+                    ngModel required>Não</label>
+            </div>
+        </div>
+        <!-- diabetes -->
+
+        <!-- hepatite -->
+        <div class="col-sm-4 col-md-2">
+            <label for="hepatite">Hepatite</label>
+            <div class="radio">
+                <label><input type="radio" name="hepatiteOption" id="hepatite-sim" value="Sim" 
+                    ngModel required >Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="hepatiteOption" id="hepatite-nao" value="Não" 
+                    ngModel required >Não</label>
+            </div>
+        </div>
+        <!-- hepatite -->
+
+        <!-- dst -->
+        <div class="col-sm-4 col-md-2">
+            <label for="dst">DST</label>
+            <div class="radio">
+                <label><input type="radio" name="dstOption" id="dst-sim" value="Sim" ngModel required
+                >Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="dstOption" id="dst-nao" value="Não" ngModel required
+                >Não</label>
+            </div>
+        </div>
+        <!-- dst -->
+
+        <!-- aids -->
+        <div class="col-sm-4 col-md-2">
+            <label for="aids">AIDS</label>
+            <div class="radio">
+                <label><input type="radio" name="aidsOption" id="aids-sim" value="Sim" ngModel 
+                    required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="aidsOption" id="aids-nao" value="Não" ngModel 
+                    required>Não</label>
+            </div>
+        </div>
+        <!-- aids -->
+            </div>
+    <!-- problemas de saúde -->
+
+    <br>
+
+    <div class="row">
+        <!-- medicamento -->
+        <div class="col-md-6">
+            <label for="medicamento">Você toma algum medicamento?&nbsp;</label>
+            <div class="radio">
+                <label><input type="radio" name="medicamentoOption" id="medicamento-sim" 
+                    #iptmedicamento="ngModel" value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+            <label><input type="radio" name="medicamentoOption" id="medicamento-nao" value="Não" 
+                ngModel required>Não</label>
+            </div>
+            <div *ngIf="iptmedicamento.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Qual?" >
+                <input type="text" class="form-control" name="medicamento-resp-sim"
+                    id="medicamentorespsim" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- medicamento -->
+
+        <!-- ex-fumante -->
+        <div class="col-md-6">
+            <label for="ex-fumante">Você é ex-fumante?</label>
+            <div class="radio">
+                <label><input type="radio" name="exfumanteOption" id="ex-fumante-sim" 
+                    #iptexfumante="ngModel" value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+            <label><input type="radio" name="exfumanteOption" id="ex-fumante-nao" value="Não" ngModel
+                required>Não</label>
+            </div>
+            <div *ngIf="iptexfumante.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
+                <input type="text" class="form-control" name="ex-fumante-resp-sim-tempo"
+                    id="exfumanterespsimtempo" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- ex-fumante -->
+    </div>
+
+    <br>
+
+    <div class="row">
+        <!-- fumante -->
+        <div class="col-md-4">
+            <label for="fumante">Você fuma?</label>
+            <div class="radio">
+            <label><input type="radio" name="fumanteOption" id="fumante-sim" #iptfumante="ngModel"
+                value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="fumanteOption" id="fumante-nao"  value="Não" ngModel
+                required>Não</label>
+            </div>
+            <div *ngIf="iptfumante.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Quantidade por dia?" >
+                <input type="text" class="form-control" name="fumante-resp-sim-quant"
+                    id="fumante-resp-sim-quant" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
+                <input type="text" class="form-control" name="fumante-resp-sim-tempo"
+                    id="fumanterespsimtempo" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- fumante -->
+
+        <!-- bebidas alcóolicas -->
+        <div class="col-md-4">
+            <label for="bebidas">Ingere bebidas alcóolicas?</label>
+            <div class="radio">
+                <label><input type="radio" name="bebidasOption" id="bebidas-sim" #iptbebida="ngModel" 
+                    value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+            <label><input type="radio" name="bebidas" id="bebidas-nao" value="Não" ngModel required
+                >Não</label>
+            </div>
+            <div *ngIf="iptbebida.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Qual bebida?" >
+                <input type="text" class="form-control" name="bebidas-resp-sim-qual"
+                    id="bebidasrespsimqual" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
+                <input type="text" class="form-control" name="bebidas-resp-sim-tempo"
+                    id="bebidasrespsimtempo" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- bebidas alcóolicas -->
+
+        <!-- drogas -->
+        <div class="col-md-4">
+            <label for="drogas">É usuário de drogas?</label>
+            <div class="radio">
+                <label><input type="radio" name="drogasOption" id="drogas-sim" #iptdroga="ngModel" 
+                    value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="drogasOption" id="drogas-nao" value="Não" ngModel 
+                    required >Não</label>
+            </div>
+            <div *ngIf="iptdroga.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Qual?" >
+                <input type="text" class="form-control" name="drogas-resp-sim-qual"
+                id="drogasrespsimqual" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
+                <input type="text" class="form-control" name="drogas-resp-sim-tempo"
+                id="drogasrespsimtempo" placeholder="Digite aqui" ngModel required>
+            </app-input>
+            </div>
+        </div>
+        <!-- drogas -->
+    </div>
+</div>
+        <!-- histórico médico -->
+
+        <br>
+
+        <!-- histórico odontológico -->
+        <div class="form-group list-group-item">
+            <h4>Histórico Odontológico</h4>
+
+            <br>
+
+            <div class="row">
+        <!-- localizacao -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Localização" >
+                <input type="text" class="form-control" name="localizacao"
+                    id="localizacao" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- localizacao -->
+
+        <!-- tamanho -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Tamanho" >
+                <input type="text" class="form-control" name="tamanho"
+                    id="tamanho" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- tamanho -->
+
+        <!-- cor -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Cor" >
+                <input type="text" class="form-control" name="cor" id="cor"
+                    placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- cor -->
+
+        <!-- forma -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Forma" >
+                <input type="text" class="form-control" name="forma" id="forma"
+                    placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- forma -->
+
+        <!-- inserção -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Inserção" >
+                <input type="text" class="form-control" name="insercao"
+                    id="insercao" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- inserção -->
+
+        <!-- fator etiológico -->
+        <div class="col-sm-6 col-md-4">
+            <app-input errorMessage="Campo obrigátorio" label="Fator Etiológico" >
+                <input type="text" class="form-control" name="fator-etiologico"
+                    id="fator-etiologico" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        <!-- fator etiológico -->
+    </div>
+
+    <br>
+
+    <div class="row">
+        <!-- ganglios -->
+        <div class="col-md-4">
+            <label for="ganglios">Gânglios linfáticos palpáveis?</label>
+            <div class="radio">
+            <label><input type="radio" name="gangliosOption" id="ganglios-sim" #iptganglios="ngModel"
+                value="Sim" ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="gangliosOption" id="ganglios-nao" value="Não" 
+                    ngModel required>Não</label>
+            </div>
+        <div *ngIf="iptganglios.value === 'Sim'">
+            <app-input errorMessage="Campo obrigátorio" label="Quais?" >
+            <input type="text" class="form-control" name="ganglios-resp-sim"
+                id="gangliosrespsim" placeholder="Digite aqui" ngModel required>
+            </app-input>
+        </div>
+        </div>
+        <!-- ganglios -->
+
+        <!-- consistência -->
+        <div class="col-md-4">
+            <label for="consistencia">Consistência</label>
+            <div class="radio">
+                <label><input type="radio" name="consistenciaOption" id="consistencia-firme" 
+                    value="Firme" ngModel required>Firme</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="consistenciaOption" id="consistencia-depressivel"
+                    value="Depressível" ngModel required>Depressível</label>
+            </div>
+        </div>
+        <!-- consistência -->
+
+        <!-- mobilidade -->
+        <div class="col-md-4">
+            <label for="mobilidade">Mobilidade</label>
+            <div class="radio">
+                <label><input type="radio" name="mobilidadeOption" id="mobilidadesim" value="Sim" 
+                    ngModel required>Sim</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="mobilidadeOption" id="mobilidadenao" value="Não" 
+                    ngModel required>Não</label>
+            </div>
+        </div>
+        <!-- mobilidade -->
+    </div>
+
+    <br>
+
+        <!-- diagnóstico clínico -->
+        <div class="row">
+            <div class="col-md-12">
+                <app-input errorMessage="Campo obrigátorio" label="Diagnóstico clínico" >
+                    <textarea name="diagnosticoclinico" id="diagnostico-clinico"
+                        class="form-control" placeholder="Digite aqui" ngModel required></textarea>
+                </app-input>
+            </div>
+        </div>
+        <!-- diagnóstico clínico -->
+
+        <br>
+
+        <!-- histopatológico -->
+        <div class="row">
+            <div class="col-md-12">
+                <app-input errorMessage="Campo obrigátorio" label="Hispátologico" >
+                    <textarea name="histopatologico" id="histopatologico"
+                        class="form-control" placeholder="Digite aqui" ngModel required></textarea>
+                </app-input>
+            </div>
+        </div>
+        <!-- histopatológico -->
+
+        <br>
+
+        <!-- imagem -->
+        <div class="row">
+            <div class="col-md-12">
+                <label for="img-diagnostico">Imagens</label>
+                <input class="form-control" type="file" id="img-diagnostico" >
+            </div>
+        </div>
+        <!-- imagem -->
+
+        <br>
+
+        <!-- enviar diagnostico -->
+        <button type="submit" class="btn btn-primary" (click)="enviaForm(formNewDiagnostic.value)"
+        [disabled]="formNewDiagnostic.invalid"><span class="glyphicon glyphicon-arrow-right"></span>
+            Enviar diagnóstico</button>
+        <!-- enviar diagnostico -->
+
+        </div>
+        <!-- histórico odontológico -->
+    </form>
+</div>
+<!-- novo diagnóstico -->

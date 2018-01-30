@@ -1,8 +1,8 @@
-import { DiagnosticAdmin } from './../../app.diagnostic';
 import { Component, OnInit, Input } from '@angular/core';
 
 import { AppService } from './../../app.service';
 import { AdminComponent } from './../admin.component';
+import { Diagnostic } from './../../app.diagnostic';
 
 @Component({
   selector: 'app-screen-diagnostic',
@@ -10,7 +10,7 @@ import { AdminComponent } from './../admin.component';
 })
 export class ScreenDiagnosticComponent implements OnInit {
 
- @Input() diagnostics: DiagnosticAdmin[];
+ @Input() diagnostics: Diagnostic[];
 
   constructor( private appDiagnostic: AppService ) { }
 

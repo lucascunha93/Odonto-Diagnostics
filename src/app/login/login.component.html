@@ -7,23 +7,26 @@
               <br>
           </div>
       </header>
-      <form (submit)="loginUser($event)">
+      <form #f="ngForm" novalidate>
           <!-- usuário -->
           <div class="form-group">
               <label for="usuario">Usuário</label>
-              <input type="text" class="form-control" id="usuario" placeholder="Digite aqui" ngModel required>
+              <input type="text" class="form-control" id="usuario" placeholder="Digite aqui"
+                name="usuario" ngModel required>
           </div>
           <!-- usuário -->
 
           <!-- senha -->
           <div class="form-group">
               <label for="senha">Senha</label>
-              <input type="password" class="form-control" id="senha" placeholder="Digite aqui" ngModel required email>
+              <input type="password" class="form-control" id="senha" placeholder="Digite aqui"
+               name="senha" ngModel required email>
           </div>
           <!-- senha -->
 
           <!-- logar -->
-          <input type="submit" class="btn btn-primary btn-group-justified" value="Logar" >
+          <input type="submit" (click)="loginUser($event)" class="btn btn-primary btn-group-justified"
+           value="Logar" >
           <!-- logar -->
       </form>
   </div>
