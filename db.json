@@ -1,106 +1,24 @@
 {
   "admin": [
-      {
+    {
       "id": "admin",
       "email": "lucasc93@hotmail.com",
       "password": "12345678"
-      }
-    ],
+    }
+  ],
   "users": [
-      {
+    {
       "id": 1,
       "email": "fulano@hotmail.com",
       "password": "fulano123"
-     },
-      {
+    },
+    {
       "id": 2,
       "email": "ciclano@hotmail.com",
       "password": "123ciclano"
-      }
-    ],
-
-  "diagnosticos": [
-    {
-      "id": 1,
-      "titulo": "Ferida ciso",
-      "acidenteOption": "Sim",
-      "acidenterespsim": "Carro",
-      "aidsOption": "Não",
-      "anemiaOption": "Não",
-      "bebidasOption": "Sim",
-      "bebidasrespsimqual": "Cerveja",
-      "bebidasrespsimtempo": "10 anos",
-      "consistenciaOption": "Depressivo",
-      "cor": "Roxa",
-      "datanascimento": "24/11/1993",
-      "diabetesOption": "Não",
-      "diagnosticoclinico": "Bom",
-      "drogasrespsimqual": "Maconha",
-      "drogasrespsimtempo": "2 anos",
-      "drogasOption": "Sim",
-      "dstOption": "Não",
-      "escolaridadeOption": "2° grau",
-      "estadocivilOption": "Solteiro",
-      "exfumanteOption": "Sim",
-      "exfumanterespsimtempo": "5 anos",
-      "fatoretiologico": "Estável",
-      "forma": "Circular",
-      "fumanteOption": "Sim",
-      "fumanterespsimquant": "3 maços por dia",
-      "fumanterespsimtempo": "9 anos",
-      "gangliosOption": "Sim",
-      "gangliosrespsim": "Muitos",
-      "hepatiteOption": "Não",
-      "histopatologico": "Regular",
-      "insercao": "Interna",
-      "localizacao": "Inferior direito",
-      "medicamentoOption": "Sim",
-      "medicamentorespsim": "Dope",
-      "mobilidadeOption": "Sim",
-      "naturalidade": "Osório",
-      "nome": "Marcio Pereira",
-      "pressaoaltaOption": "Não",
-      "profissao": "Advogado",
-      "tamanho": "Grande",
-      "tratamentomedico": "Sim",
-      "tratamentomedicoOption": "Sim",
-      "tratamentomedicosim": "Muito tempo",
-      "sexoOption": "Masculino"
-    },
-    {
-    "id": 12,
-    "titulo": "Lesão lado direito.",
-    "acidente-resp-sim": "Positivo",
-    "bebidas-resp-sim-qual": "Positivo",
-    "bebidas-resp-sim-tempo": "Positivo",
-    "cor": "Positivo",
-    "data-nascimento": "Positivo",
-    "diagnostico-clinico": "Positivo",
-    "drogas-resp-sim-qual": "Positivo",
-    "drogas-resp-sim-tempo": "Positivo",
-    "ex-fumante-resp-sim-tempo": "Positivo",
-    "fator-etiologico": "Positivo",
-    "forma": "Positivo",
-    "fumante-resp-sim-quant": "Positivo",
-    "fumante-resp-sim-tempo": "Positivo",
-    "ganglios-resp-sim": "Positivo",
-    "histopatologico": "Positivo",
-    "insercao": "Positivo",
-    "localizacao": "Positivo",
-    "medicamento-resp-sim": "Positivo",
-    "naturalidade": "Positivo",
-    "nome": "Positivo",
-    "profissao": "Positivo",
-    "tamanho": "Positivo",
-    "tratamento-medico-resp-sim": "Positivo"
-    },
-    {
-    "id": 123,
-    "titulo": "Mucosa interna."
-    },
-    {
-    "id": 1234,
-    "titulo": "Inflamação avermelhada."
     }
+  ],
+  "diagnosticos": [
+    
   ]
 }

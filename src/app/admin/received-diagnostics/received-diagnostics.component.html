@@ -44,7 +44,7 @@
                 <!-- data de nascimento -->
                 <div class="col-sm-12 col-md-6">
                     <label for="data-nascimento">Data de nascimento</label>
-                    <p>{{ diagnosticAdmin?.datanascimento }}</p>
+                    <p>{{ diagnosticAdmin?.datanascimento | date: 'dd/MM/yyyy' }}</p>
                 </div>
                 <!-- data de nascimento -->
 
@@ -89,10 +89,10 @@
             <div class="row">
                 <!-- tratamento médico -->
                 <div class="col-md-6">
-                    <label for="tratamento-medico">Você está em tratamento médico?</label>
-                    <p>{{ diagnosticAdmin?.tratamentomedico }}</p>
+                    <label for="tratamento-medico">Está em tratamento médico?</label>
+                    <p>{{ diagnosticAdmin?.tratamentomedicoOption }}</p>
 
-                    <div *ngIf="diagnosticAdmin?.tratamentomedico === 'Sim'">
+                    <div *ngIf="diagnosticAdmin?.tratamentomedicoOption === 'Sim'">
                         <label for="acidente-resp-sim">Qual?</label>
                         <p>{{ diagnosticAdmin?.tratamentomedicosim }}</p>
                     </div>
@@ -101,7 +101,7 @@
 
                 <!-- acidente -->
                 <div class="col-md-6">
-                    <label for="acidente">Você já sofreu algum acidente?</label>
+                    <label for="acidente">Já sofreu algum acidente?</label>
                     <p>{{ diagnosticAdmin?.acidenteOption }} </p>
                     
                     <div *ngIf="diagnosticAdmin?.acidenteOption === 'Sim'">
@@ -115,7 +115,7 @@
             <br>
 
             <!-- problemas de saúde -->
-            <label>Você tem ou teve algum dos problemas de saúde abaixo?</label>
+            <label>Tem ou teve algum dos problemas de saúde abaixo?</label>
 
             <div class="row">
                 <!-- pressao alta -->
@@ -167,16 +167,18 @@
             <div class="row">
                 <!-- medicamento -->
                 <div class="col-md-6">
-                    <label for="medicamento">Você toma algum medicamento?&nbsp;</label>
-                    <p>Sim</p>
-                    <label for="medicamento-resp-sim">Qual?</label>
-                    <p>{{ diagnosticAdmin?.medicamentorespsim }}</p>
+                    <label for="medicamento">Toma algum medicamento?&nbsp;</label>
+                    <p>{{ diagnosticAdmin?.medicamentoOption }}</p>
+                    <div *ngIf="diagnosticAdmin?.medicamentoOption === 'Sim'" >
+                        <label for="medicamento-resp-sim">Qual?</label>
+                        <p>{{ diagnosticAdmin?.medicamentorespsim }}</p>
+                    </div>
                 </div>
                 <!-- medicamento -->
 
                 <!-- ex-fumante -->
                 <div class="col-md-6">
-                    <label for="ex-fumante">Você é ex-fumante?</label>
+                    <label for="ex-fumante">É ex-fumante?</label>
                     <p>{{ diagnosticAdmin?.exfumanteOption }}</p>
 
                     <div *ngIf="diagnosticAdmin?.exfumanteOption === 'Sim'" >
@@ -192,7 +194,7 @@
             <div class="row">
                 <!-- fumante -->
                 <div class="col-md-4">
-                  <label for="fumante">Você fuma?</label>
+                  <label for="fumante">Fuma?</label>
                   <p>{{ diagnosticAdmin?.fumanteOption }}</p>
 
                     <div *ngIf="diagnosticAdmin?.fumanteOption === 'Sim'" >
@@ -211,9 +213,9 @@
                     <p>{{ diagnosticAdmin?.bebidasOption }}</p>
                     
                     <div *ngIf="diagnosticAdmin?.bebidasOption === 'Sim'" >
-                        <label for="bebidas-resp-sim-qual">Qual bebida?</label>
+                        <label for="bebidasrespsimqual">Qual bebida?</label>
                         <p>{{ diagnosticAdmin?.bebidasrespsimqual }}</p>
-                        <label for="bebidas-resp-sim-tempo">Há quanto empo?</label>
+                        <label for="bebidasrespsimtempo">Há quanto empo?</label>
                         <p>{{ diagnosticAdmin?.bebidasrespsimtempo }}</p>
                     </div>
                 </div>

@@ -368,16 +368,16 @@
                     value="Sim" ngModel required>Sim</label>
             </div>
             <div class="radio">
-            <label><input type="radio" name="bebidas" id="bebidas-nao" value="Não" ngModel required
+            <label><input type="radio" name="bebidasOption" id="bebidas-nao" value="Não" ngModel required
                 >Não</label>
             </div>
             <div *ngIf="iptbebida.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Qual bebida?" >
-                <input type="text" class="form-control" name="bebidas-resp-sim-qual"
+                <input type="text" class="form-control" name="bebidasrespsimqual"
                     id="bebidasrespsimqual" placeholder="Digite aqui" ngModel required>
             </app-input>
             <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                <input type="text" class="form-control" name="bebidas-resp-sim-tempo"
+                <input type="text" class="form-control" name="bebidasrespsimtempo"
                     id="bebidasrespsimtempo" placeholder="Digite aqui" ngModel required>
             </app-input>
             </div>
@@ -468,7 +468,7 @@
         <!-- fator etiológico -->
         <div class="col-sm-6 col-md-4">
             <app-input errorMessage="Campo obrigátorio" label="Fator Etiológico" >
-                <input type="text" class="form-control" name="fator-etiologico"
+                <input type="text" class="form-control" name="fatoretiologicoOption"
                     id="fator-etiologico" placeholder="Digite aqui" ngModel required>
             </app-input>
         </div>

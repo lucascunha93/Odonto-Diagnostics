@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { AppService } from './../../app.service';
 import { AdminComponent } from './../admin.component';
@@ -10,7 +10,7 @@ import { Diagnostic } from './../../app.diagnostic';
 })
 export class ScreenDiagnosticComponent implements OnInit {
 
- @Input() diagnostics: Diagnostic[];
+ diagnostics: Diagnostic[];
 
   constructor( private appDiagnostic: AppService ) { }
 

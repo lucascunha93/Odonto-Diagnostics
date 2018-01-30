@@ -9,7 +9,10 @@
             class="list-group-item list-group-item-success"
             [routerLink]="['../recdiag', diagnostic.id]"
             *ngFor="let diagnostic of diagnostics">
-            {{diagnostic.titulo}}</a>
+            {{diagnostic?.titulo}}</a>
+            <div *ngIf="diagnostics" >
+              <p>Não há nenhum diagnóstico novo!</p>
+            </div>
         </div>
     </div>
     <!-- diagnosticos -->

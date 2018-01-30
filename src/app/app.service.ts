@@ -25,4 +25,8 @@ export class AppService {
         .map(response => response.json())
         .catch(ErrorHandler.handlerError);
     }
+    enviarDiagnostic(diagnostic: Diagnostic): Observable< Diagnostic [] > {
+      return this.http.post(`${ODONTO_API}/diagnosticos/`, diagnostic)
+      .map( response => response.json())
+    }
 }
