@@ -5,14 +5,14 @@
         <div class="list-group-item">
             <h3>Diagnósticos</h3>
             <br>
+            <div *ngIf="!Diagnostic" >
+              <p>Não há nenhum diagnóstico novo!</p>
+            </div>
             <a
             class="list-group-item list-group-item-success"
             [routerLink]="['../recdiag', diagnostic.id]"
             *ngFor="let diagnostic of diagnostics">
             {{diagnostic?.titulo}}</a>
-            <div *ngIf="diagnostics" >
-              <p>Não há nenhum diagnóstico novo!</p>
-            </div>
         </div>
     </div>
     <!-- diagnosticos -->

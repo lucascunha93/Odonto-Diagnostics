@@ -34,7 +34,7 @@
         <div class="row">
         <!-- nome -->
         <div class="col-sm-12 col-md-6">
-            <app-input errorMessage="Campo obrigátorio" label="Usuário" >
+            <app-input errorMessage="Campo obrigátorio" label="Nome" >
                 <input type="text" class="form-control has-sucess" name="nome" id="nome"
                 placeholder="Digite aqui" ngModel required>
             </app-input>
@@ -305,7 +305,7 @@
             </div>
             <div *ngIf="iptmedicamento.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                <input type="text" class="form-control" name="medicamento-resp-sim"
+                <input type="text" class="form-control" name="medicamentorespsim"
                     id="medicamentorespsim" placeholder="Digite aqui" ngModel required>
             </app-input>
             </div>
@@ -325,7 +325,7 @@
             </div>
             <div *ngIf="iptexfumante.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                <input type="text" class="form-control" name="ex-fumante-resp-sim-tempo"
+                <input type="text" class="form-control" name="exfumanterespsimtempo"
                     id="exfumanterespsimtempo" placeholder="Digite aqui" ngModel required>
             </app-input>
             </div>
@@ -349,11 +349,11 @@
             </div>
             <div *ngIf="iptfumante.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Quantidade por dia?" >
-                <input type="text" class="form-control" name="fumante-resp-sim-quant"
+                <input type="text" class="form-control" name="fumanterespsimquant"
                     id="fumante-resp-sim-quant" placeholder="Digite aqui" ngModel required>
             </app-input>
             <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                <input type="text" class="form-control" name="fumante-resp-sim-tempo"
+                <input type="text" class="form-control" name="fumanterespsimtempo"
                     id="fumanterespsimtempo" placeholder="Digite aqui" ngModel required>
             </app-input>
             </div>
@@ -397,11 +397,11 @@
             </div>
             <div *ngIf="iptdroga.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Qual?" >
-                <input type="text" class="form-control" name="drogas-resp-sim-qual"
+                <input type="text" class="form-control" name="drogasrespsimqual"
                 id="drogasrespsimqual" placeholder="Digite aqui" ngModel required>
             </app-input>
             <app-input errorMessage="Campo obrigátorio" label="Há quanto tempo?" >
-                <input type="text" class="form-control" name="drogas-resp-sim-tempo"
+                <input type="text" class="form-control" name="drogasrespsimtempo"
                 id="drogasrespsimtempo" placeholder="Digite aqui" ngModel required>
             </app-input>
             </div>
@@ -491,7 +491,7 @@
             </div>
         <div *ngIf="iptganglios.value === 'Sim'">
             <app-input errorMessage="Campo obrigátorio" label="Quais?" >
-            <input type="text" class="form-control" name="ganglios-resp-sim"
+            <input type="text" class="form-control" name="gangliosrespsim"
                 id="gangliosrespsim" placeholder="Digite aqui" ngModel required>
             </app-input>
         </div>
